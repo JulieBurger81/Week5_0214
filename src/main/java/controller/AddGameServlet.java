@@ -28,7 +28,6 @@ public class AddGameServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		String name = request.getParameter("name");
 		String type = request.getParameter("type");
 		Integer num_of_players = Integer.parseInt(request.getParameter("numOfPlayers"));

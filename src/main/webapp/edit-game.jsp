@@ -9,9 +9,9 @@
 </head>
 <body>
 	<form action="editGameServlet" method="post">
-		Game's Name: <input type="text" name="name" value="${gameToEdit.name}">
-		Type of Game: <input type="text" name="type" value="${gameToEdit.type}">
-		Max number of Players: <input type="number" name="numOfPlayers" value="${gameToEdit.numOfPlayers}">
+		Game's Name: <input type="text" name="name" value="${gameToEdit.name}"> <br />
+		Type of Game: <input type="text" name="type" value="${gameToEdit.type}"> <br />
+		Max number of Players: <input type="number" name="numOfPlayers" value="${gameToEdit.numOfPlayers}"> <br />
 		<input type="hidden" name="ID"	value="${gameToEdit.id}">
 		<input type="submit" value="Save Edited Item">
 	</form>

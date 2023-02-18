@@ -5,14 +5,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Games List</title>
+<title>View list of all Games</title>
 </head>
 <body>
 	<form method="post" action="navigationServlet">
-		<input type="submit" value="Edit" name="doThisToGame">
-		<input type="submit" value="Delete" name="doThisToGame">
-		<input type="submit" value="Add" name="doThisToGame">
-		<br/>
 		List of Family Games
 		<table>
 			<c:forEach items="${requestScope.allGames}" var="currentgame">
@@ -24,6 +20,11 @@
 				</tr>
 			</c:forEach>
 		</table>
+		<input type="submit" value="Edit" name="doThisToGame">
+		<input type="submit" value="Delete" name="doThisToGame">
+		<input type="submit" value="Add" name="doThisToGame">
+		<br/>
 	</form>
+	<a href="viewAllGameNightsServlet"> View all Game Nights </a> <br/>
 </body>
 </html>
